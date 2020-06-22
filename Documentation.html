@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style-3.css">
+  <title>Documentation</title>
+</head>
+<body>
+<nav id="navbar">
+  <header style="text-align: center; color: #22263c;">Say Hello!</header>
+  <ul>
+    <a href="#Introduction" class="nav-link"><li class="nav_link">Introduction</li></a>
+    <a href="#Assembly_Language" class="nav-link"><li class="nav_link">Assembly Language</li></a>
+    <a href="#C" class="nav-link"><li class="nav_link">C</li></a>
+    <a href="#C++" class="nav-link"><li class="nav_link">C++</li></a>
+    <a href="#Javascript" class="nav-link"><li class="nav_link">Javascript</li></a>
+    <a href="#Python" class="nav-link"><li class="nav_link">Python</li></a>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <h1 style="font-family: monospace; color: #a9d9ff;text-align: center; font-size: 25px">Say Hello in Different Languages!!</h1><br>
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <p>Computers are dumb. They only do what they’re told. How do you tell a
+       computer what to do? You use a programming language. The very first thing
+       you’ll do when learning a new programming language is how to make the
+       computer display “Hello, World”.
+    </p>
+    <p>There is no perfect programming language, they all offer something a little
+       different, and there are hundreds of programming languages with new ones
+       being created every day.
+    </p>
+    <p>Here is a selection of programming languages that have a place in the
+       programming hall of fame. They’re all either used today or have contributed
+       something to the art of computer languages.
+    </p>
+  </section><br>
+  <section class="main-section" id="Assembly_Language">
+    <header>Assembly Language</header>
+    <p>This is the language that will get you the highest performing and most
+      efficient software that is still human-readable. It’s so hard to write
+      in that it only makes sense to use it for small parts of a programme that
+      are performance-sensitive. You will find it in operating systems and 3D
+      game engines.
+    </p><br>
+    <ul><li>Here's the code for it:</li></ul>
+      <code>
+        global  _main<br>
+        extern  _printf<br>
+        <br>
+        section .text<br>
+      _main:
+        push    message<br>
+        call    _printf<br>
+        add     esp, 4<br>
+        ret<br>
+      message:<br>
+        db  'Hello, World', 10, 0<br>
+      </code>
+  </section><br>
+  <section class="main-section" id="C">
+    <header>C</header>
+    <p>The most important language in the world. It’s what operating systems
+      like Windows, MacOS, iOS, and Android are written in, as well as browsers
+      and 3D games engines. Its syntax has influenced countless other programming
+      languages.</p>
+    <p>C maps closely to Assembly Language but you can write more complex
+      programmes with it. If you need the highest performance possible without
+      losing your mind then C is for you.</p>
+    <p>C is also the language that made “Hello, World” examples popular.
+    </p><br>
+    <ul><li>Here's the code for it:</li></ul>
+    <code>
+      #include <stdio.h><br>
+      <br>
+      int main(void)<br>
+      {<br>
+          printf("hello, world\n");<br>
+      }<br>
+    </code>
+  </section><br>
+  <section class="main-section" id="C++">
+    <header>C++</header>
+    <p>Has performance close to C and is used in many important projects like
+      the Chrome Browser. C++ was an effort to make a language that was easier
+      to build large projects with while still being fast and efficient.
+    </p><br>
+    <ul><li>Here's the code for it:</li></ul>
+    <code>
+      #include <iostream>
+        <br>
+        int main()<br>
+        {<br>
+            std::cout << "Hello, world!\n";<br>
+            return 0;<br>
+        }<br>
+    </code>
+  </section><br>
+  <section class="main-section" id="Javascript">
+    <header>JavaScript</header>
+    <p>JavaScript is the most commonly found programming language in the world.
+      Mainly because it is required to be in every web browser. JavaScript is
+      what makes the web dynamic and interactive. It was standardised under the
+      name ECMAScript.
+    </p><br>
+    <ul><li>Here's the code for it:</li></ul>
+    <code>
+    console.log("Hello World!");<br>
+    </code>
+  </section><br>
+  <section class="main-section" id="Python">
+    <header>Python</header>
+    <p>Has a compact syntax needing far fewer lines of code than languages like
+      Java or C++. It’s very popular and is used for websites and artificial
+      intelligence (AI) tasks.
+    </p><br>
+    <ul><li>Here's the code for it:</li></ul>
+    <code>
+    print("Hello World")<br><br>
+    </code>
+  </section>
+</main>
+</body>
